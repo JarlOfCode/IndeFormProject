@@ -1,0 +1,82 @@
+SOMETHING WRONG? - Please give us feedback (contact@indeform.com) so we could improve this demo. Thanks and happy coding! 
+
+[PYTHON VIRTUAL ENVIRONMENTS]
+# - Dependency Management: Prevents conflicts between dependencies of multiple projects.
+# - Ease of installation and setting up new project on different machines: Store your dependencies in requirements.txt file and run pip install -r requirements.txt to install the dependencies wherever you want.
+
+# Install virtual environment. In general 'virtualenv' library is used  but as from PYTHON3 'venv' package is shipped directly with python3 so it is recommended to use 'venv' instead of 'virtualenv' for Python3 projects. Virtual environment forlder can be installed in any location. It can be application folder or a shared forlder, ex.: ~/.virtualenvs/<PROJECT_NAME>.
+# python3 -m venv /path/to/new/virtual/environment
+python3 -m venv .idfdemo-venv
+
+# Activate virtual environment running it according to location of it's installation - prompt will change to reflect that.
+source .idfdemo-venv/bin/activate
+
+# To deactivate it when needed.
+deactivate
+
+# Learn check python path and which python version virtual environment is running on.
+which python
+python --version
+
+# Show you which packages are installed for this project.
+pip freeze
+
+# Create a requirements.txt that you can use to remember which packages need installing
+pip freeze > requirements.txt
+
+# Install packages in a new project location or deployment
+pip install -r requirements.txt
+
+# To remove virtual environment - just delete virtual environment folder
+rm -r
+
+For Django applications, recommended locating your virtual environments:
+/opt/virtualenv/<env_name> for the virtual environment
+/opt/<vendor_name>/<app_name> for the server application folder
+
+This allows to create multiple independent virtualenvs and application folders for different applications, versions, etc as you see fit.
+
+
+[INSTALLING DJANGO INTO VIRTUAL INVIRONMENT]
+# Once virtual environment is activated it's time to start with Django installation with MySQL support.
+pip install django mysqlclient
+
+# Install Pillow for images management.
+pip install pillow
+
+
+[MYSQL SETUP]
+# Login to MySQL with root user
+mysql -uroot -p
+
+# Check what databases you have
+mysql> show databases;
+
+# Create database for demo project
+mysql> CREATE DATABASE idf_django_demo CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+# Exit database creation
+mysql> exit
+
+
+[SETTING UP DJANGO AND RUNNING THE SERVER]
+# Goto settings file 'idfdemo/settings.py' and edit database connection parameters.
+vim idfdemo/settings.py
+
+# Make sure virtual environment is activated. Goto main folder where manage.py exists.
+
+# Generate migrations to for idfdemo data models
+python manage.py makemigrations
+
+# Migrate Django apps
+python manage.py makemigrations marea parea products
+
+# Run migrations for idfdemo modules models
+python manage.py migrate
+
+# create superuser to be able to access admin panel
+python manage.py createsuperuser
+
+# Run idfdemo development server and open website at http://127.0.0.1:8000
+# Admin panel can be accessed at http://127.0.0.1:8000/admin
+python manage.py runserver
