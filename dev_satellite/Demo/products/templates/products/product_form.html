@@ -18,7 +18,11 @@
         {% csrf_token %}
         
         <div class="form-group">
-            <input class="form-control shadow-lg" type="{{ form.title.field.widget.input_type }}" name="{{ form.title.name }}" placeholder="Title" value="{% if form.title.value %}{{ form.title.value }}{% endif %}">
+            <input class="form-control shadow-lg" 
+                   type="{{ form.title.field.widget.input_type }}"
+                   name="{{ form.title.name }}" 
+                   placeholder="Title" 
+                   value="{% if form.title.value %}{{ form.title.value }}{% endif %}">
         
             {% if form.title.errors %}
                 <div class="msg error">

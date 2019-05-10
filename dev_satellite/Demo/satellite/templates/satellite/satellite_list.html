@@ -1,0 +1,38 @@
+{% extends 'marea/layout.html' %}
+{% load static %}
+
+
+{% block content %}
+    <h1 class="mb-5">Satellite list</h1>
+    
+    <table class="table table-hover shadow-lg">
+        <thead>
+            <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% if satellite_list %}
+                {% for satellite in satellite_list %}
+                    <tr>
+                        <th scope="row">{{ forloop.counter }}</th>
+                        <td>    
+                            <a href="{% url 'satellite:detail' satellite.id %}">
+                                {{ satellite.name }}
+                            </a>
+                        </td>
+                        
+                        
+                    </tr>
+                {% endfor %}
+            {% else %}
+                <tr>
+                    <td colspan="4">There are no satellites</td>
+                </tr>
+            {% endif %}
+        </tbody>
+    </table>
+
+    {% include 'marea/pagination.html' %}
+{% endblock content %}

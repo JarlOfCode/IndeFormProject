@@ -1,0 +1,100 @@
+{% extends 'marea/layout.html' %}
+<!--{% include 'shared/header.html' %} -->
+<!--{% include 'marea/navigation.html' %} -->
+
+
+{% block content %}
+    {% if form.instance.id %}
+        <h1>Update satellite</h1>
+    {% else %}
+        <h1 class="mb-5">Create new satellite</h1>
+    {% endif %}
+
+    <form class="form" action="
+            {% if form.instance.id %}
+                {% url 'satellite:update' form.instance.id %}
+            {% else %}
+                {% url 'satellite:create' %}
+            {% endif %}"
+            method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        
+        <div class="form-group">
+            <input class="form-control shadow-lg" 
+                   type="{{ form.name.field.widget.input_type }}"
+                   name="{{ form.name.name }}" 
+                   placeholder="name" 
+                   value="{% if form.title.value %}{{ form.title.value }}{% endif %}">
+        
+            {% if form.name.errors %}
+                <div class="msg error">
+                    {% for error in form.name.errors %}
+                        {{ error|escape }}
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+        
+        <div class="form-group">
+            <input class="form-control shadow-lg" 
+                type="{{ form.health.field.widget.input_type }}" 
+                name="{{ form.health.name }}" 
+                placeholder="123.45" 
+                step=".01" 
+                value="{% if form.health.value %}{{ form.health.value }}{% endif %}">
+        
+            {% if form.health.errors %}
+                <div class="msg error">
+                    {% for error in form.health.errors %}
+                        {{ error|escape }}
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+
+        <div class="form-group">
+                <input class="form-control shadow-lg" 
+                       type="{{ form.speed.field.widget.input_type }}"
+                       name="{{ form.speed.name }}" 
+                       placeholder="Speed" 
+                       value="{% if form.speed.value %}{{ form.speed.value }}{% endif %}">
+            
+                {% if form.speed.errors %}
+                    <div class="msg error">
+                        {% for error in form.speed.errors %}
+                            {{ error|escape }}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+        </div>
+        
+        <div class="form-group">
+                <input class="form-control shadow-lg" 
+                       type="{{ form.fuel_storage_size.field.widget.input_type }}"
+                       name="{{ form.fuel_storage_size.name }}" 
+                       placeholder="Fuel Storage" 
+                       value="{% if form.fuel_storage_size.value %}{{ form.fuel_storage_size.value }}{% endif %}">
+            
+                {% if form.fuel_storage_size.errors %}
+                    <div class="msg error">
+                        {% for error in form.fuel_storage_size.errors %}
+                            {{ error|escape }}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+
+        <button class="btn btn-indeform btn-block shadow-lg mt-5" type="submit">
+            {% if form.instance.id %}
+                Update
+            {% else %}
+                Create
+            {% endif %}
+        </button>
+    </form>
+{% endblock content %}
+
+
+
+
+<!--{% include 'shared/footer.html' %} -->

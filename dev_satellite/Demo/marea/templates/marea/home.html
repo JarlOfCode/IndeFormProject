@@ -1,8 +1,14 @@
 {% extends 'marea/layout.html' %}
 
+{% load static %}
 
 {% block content %}
-    <h1>Welcome to Indeform Django Demo Home Page</h1>
 
-    <p class="lead">This is something about something.<br> It implements simple product model with main CRUD functions whatever that means.</p>
+<a href="{% url 'satellite:create' %}" >
+        <p id="select-btn" class="select-btn">Create Satallite</p>
+</a>   
+<a class="select-btn" href="{% url 'satellite:list' %}">
+        <p class="select-btn">List all Sattelites</p>
+</a>         
+
 {% endblock content %}

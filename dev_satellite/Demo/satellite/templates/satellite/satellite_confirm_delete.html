@@ -1,0 +1,17 @@
+{% extends 'marea/layout.html' %}
+
+
+{% block content %}
+    <h1 class="mb-5">Delete satellite</h1>
+
+    <form action="{% url 'satellite:delete' satellite.id %}" method="post">
+        {% csrf_token %}
+
+            <h5 class="mb-5">Are you sure you want to delete <span class="font-italic font-weight-bold">{{ satellite.title }}</span>?</h3>
+        
+            <div>
+                <a class="btn btn-indeform" href="{% url 'satellite:detail' satellite.id %}" role="button">Cancel</a>
+                <button class="btn btn-indeform-danger" type="submit">Delete</button>
+            </div>
+        </form>
+{% endblock content %}

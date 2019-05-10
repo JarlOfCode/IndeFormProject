@@ -1,0 +1,56 @@
+[2019-04-30 05:30:50.624] [sharedprocess] [info] main {"machineId":"abfba9df6efe1c3c8d029166e5839c9daa9ce694d9ea1ea90666e336079feb87"}
+[2019-04-30 05:30:51.055] [sharedprocess] [info] Scanned user extensions: 0
+[2019-04-30 05:30:51.090] [sharedprocess] [info] Scanned user extensions: 0
+[2019-04-30 05:30:51.099] [sharedprocess] [info] Scanned user extensions: 0
+[2019-04-30 05:30:51.354] [sharedprocess] [info] Scanned system extensions: 72
+[2019-04-30 05:30:51.357] [sharedprocess] [info] Scanned system extensions: 72
+[2019-04-30 05:30:51.360] [sharedprocess] [info] Scanned system extensions: 72
+[2019-04-30 05:30:55.947] [sharedprocess] [info] Scanned user extensions: 0
+[2019-04-30 05:31:10.267] [sharedprocess] [info] Scanned user extensions: 0
+[2019-04-30 05:31:10.278] [sharedprocess] [info] Scanned user extensions: 0
+[2019-04-30 05:31:11.006] [sharedprocess] [info] Scanned system extensions: 72
+[2019-04-30 05:31:11.044] [sharedprocess] [info] Scanned system extensions: 72
+[2019-04-30 05:31:13.439] [sharedprocess] [info] Scanned user extensions: 0
+[2019-04-30 05:31:30.693] [sharedprocess] [info] Starting to clean up unused language packs.
+[2019-04-30 05:36:13.756] [sharedprocess] [info] Scanned user extensions: 0
+[2019-04-30 05:41:13.791] [sharedprocess] [info] Scanned user extensions: 0
+[2019-04-30 05:46:13.824] [sharedprocess] [info] Scanned user extensions: 0
+[2019-04-30 05:51:13.866] [sharedprocess] [info] Scanned user extensions: 0
+[2019-04-30 05:56:13.897] [sharedprocess] [info] Scanned user extensions: 0
+[2019-04-30 06:01:13.929] [sharedprocess] [info] Scanned user extensions: 0
+[2019-04-30 06:06:13.959] [sharedprocess] [info] Scanned user extensions: 0
+[2019-04-30 06:11:13.972] [sharedprocess] [info] Scanned user extensions: 0
+[2019-04-30 06:16:14.004] [sharedprocess] [info] Scanned user extensions: 0
+[2019-04-30 06:21:14.045] [sharedprocess] [info] Scanned user extensions: 0
+[2019-04-30 06:26:14.074] [sharedprocess] [info] Scanned user extensions: 0
+[2019-04-30 06:28:42.726] [sharedprocess] [info] Scanned user extensions: 0
+[2019-04-30 06:28:43.095] [sharedprocess] [info] Scanned system extensions: 72
+[2019-04-30 06:30:59.790] [sharedprocess] [info] Scanned user extensions: 0
+[2019-04-30 06:30:59.808] [sharedprocess] [info] Scanned user extensions: 0
+[2019-04-30 06:30:59.841] [sharedprocess] [info] Scanned user extensions: 0
+[2019-04-30 06:30:59.886] [sharedprocess] [info] Scanned user extensions: 0
+[2019-04-30 06:31:00.016] [sharedprocess] [info] Scanned user extensions: 0
+[2019-04-30 06:31:00.637] [sharedprocess] [info] Scanned user extensions: 0
+[2019-04-30 06:31:00.701] [sharedprocess] [info] Installing extension: ms-python.python
+[2019-04-30 06:31:00.790] [sharedprocess] [info] Scanned user extensions: 0
+[2019-04-30 06:31:01.043] [sharedprocess] [info] Scanned user extensions: 0
+[2019-04-30 06:31:01.419] [sharedprocess] [info] Scanned system extensions: 72
+[2019-04-30 06:31:01.465] [sharedprocess] [info] Scanned system extensions: 72
+[2019-04-30 06:31:01.482] [sharedprocess] [info] Scanned system extensions: 72
+[2019-04-30 06:31:01.609] [sharedprocess] [info] Scanned system extensions: 72
+[2019-04-30 06:31:01.693] [sharedprocess] [info] Scanned system extensions: 72
+[2019-04-30 06:31:01.699] [sharedprocess] [info] Scanned system extensions: 72
+[2019-04-30 06:31:10.201] [sharedprocess] [info] Downloaded extension: ms-python.python /tmp/b8c34de9-49de-4a9f-94ae-9a44e817a9c1
+[2019-04-30 06:31:14.136] [sharedprocess] [info] Scanned user extensions: 0
+[2019-04-30 06:31:17.996] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.ms-python.python-2019.4.11987: ms-python.python
+[2019-04-30 06:31:17.999] [sharedprocess] [info] Renamed to /root/.vscode/extensions/ms-python.python-2019.4.11987
+[2019-04-30 06:31:18.010] [sharedprocess] [info] Installation completed. ms-python.python
+[2019-04-30 06:31:18.042] [sharedprocess] [info] Extensions installed successfully: ms-python.python
+[2019-04-30 06:36:14.403] [sharedprocess] [info] Scanned user extensions: 1
+[2019-04-30 06:41:14.465] [sharedprocess] [info] Scanned user extensions: 1
+[2019-04-30 06:46:14.491] [sharedprocess] [info] Scanned user extensions: 1
+[2019-04-30 06:51:14.570] [sharedprocess] [info] Scanned user extensions: 1
+[2019-04-30 06:56:14.616] [sharedprocess] [info] Scanned user extensions: 1
+[2019-04-30 07:01:14.643] [sharedprocess] [info] Scanned user extensions: 1
+[2019-04-30 07:06:14.716] [sharedprocess] [info] Scanned user extensions: 1
+[2019-04-30 07:11:14.818] [sharedprocess] [info] Scanned user extensions: 1

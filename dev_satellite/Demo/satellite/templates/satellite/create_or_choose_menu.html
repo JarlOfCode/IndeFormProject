@@ -1,0 +1,12 @@
+{% extends 'marea/layout.html' %}
+{% include 'shared/header.html' %}
+{% include 'marea/navigation.html' %}
+<!-- kaip ivesti url?? -->
+<a href="{% url 'satellite:create' product.id %}">
+    <img src="create_sat" alt="create" height="320" width="320">
+</a>
+<a href="choose/">
+    <img src="choose_sat" alt="choose" height="320" width="320" />
+</a>
+
+{% include 'shared/footer.html' %}

@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
 
     # See https://docs.djangoproject.com/en/2.1/ref/contrib/humanize/
     'django.contrib.humanize',
@@ -45,6 +46,7 @@ INSTALLED_APPS = [
     'marea.apps.MareaConfig',
     'parea.apps.PareaConfig',
     'products.apps.ProductsConfig',
+    'satellite.apps.SatelliteConfig',
 ]
 
 MIDDLEWARE = [
