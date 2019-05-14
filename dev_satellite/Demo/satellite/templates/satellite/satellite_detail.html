@@ -18,7 +18,7 @@
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                         <a class="btn btn-sm btn-indeform-danger" href="{% url 'satellite:delete' satellite.id %}" role="button">Delete</a>
-                        <a class="btn btn-sm btn-indeform" href="{% url 'satellite:update' satellite.id %}" role="button">Update</a>
+                        <a class="btn btn-sm btn-indeform" href="{% url 'satellite:update' pk=satellite.id %}" role="button">Update</a>
                     </div>
                     <small>Last time edited: {{ product.edited_at|naturaltime }}</small>
                 </div>

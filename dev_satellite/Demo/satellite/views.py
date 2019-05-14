@@ -38,12 +38,13 @@ class SatelliteUpdateView(LoginRequiredMixin, UpdateView):
     model = Satellite
     fields = ['name', 'health', 'speed', 'fuel_storage_size']
     success_url = 'satellite:detail'
+    template_name = "satellite/satellite_create.html"
 
 
     def get_success_url(self):
         if not self.success_url:
             raise ImproperlyConfigured('No URL to redirect to. Provide a success_url.')
-        return reverse(self.success_url, kwargs={'pk': self.object.id})    
+        return reverse(self.success_url, kwargs={'pk': self.Satellite.id})    
     
 
 

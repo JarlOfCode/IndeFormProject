@@ -2,6 +2,7 @@
     "telemetry.machineId": "abfba9df6efe1c3c8d029166e5839c9daa9ce694d9ea1ea90666e336079feb87",
     "openedPathsList": {
         "workspaces3": [
+            "file:///home/IndeFormProject",
             "file:///media/sf_SharedFolder/Django%20ayyLmao/Demo"
         ],
         "files2": [
@@ -53,7 +54,18 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "fsPath": "/media/sf_SharedFolder/Django ayyLmao/Demo",
+                                        "fsPath": "/home/IndeFormProject",
+                                        "external": "file:///home/IndeFormProject",
+                                        "path": "/home/IndeFormProject",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/home/IndeFormProject"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
                                         "external": "file:///media/sf_SharedFolder/Django%20ayyLmao/Demo",
                                         "path": "/media/sf_SharedFolder/Django ayyLmao/Demo",
                                         "scheme": "file"
@@ -852,7 +864,8 @@
                     },
                     {
                         "id": "workbench.action.terminal.split",
-                        "label": "&&Split Terminal"
+                        "label": "&&Split Terminal",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1413,5 +1426,5 @@
     },
     "theme": "vs-dark",
     "themeBackground": "#1e1e1e",
-    "pickerWorkingDir": "/media/sf_SharedFolder/Django ayyLmao/Demo/idfdemo"
+    "pickerWorkingDir": "/home"
 }

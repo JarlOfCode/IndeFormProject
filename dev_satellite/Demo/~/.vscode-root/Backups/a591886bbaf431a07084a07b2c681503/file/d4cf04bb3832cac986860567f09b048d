@@ -1,0 +1,29 @@
+file:///home/IndeFormProject/dev_satellite/Demo/satellite/templates/satellite/satellite_detail.html
+{% extends 'marea/layout.html' %}
+{% load static %}
+{% load humanize %}
+
+
+{% block content %}
+    <h1 class="mb-5">Satellite details</h1>
+
+    <div class="col-md-6">
+        <div class="card mb-8 shadow-lg">
+            <img class="card-img-top" src="{% if satellite.thumbnail %}{{ satellite.thumbnail.url }}{% elif satellite.image %}{{ satellite.image.url }}{% else %}{% static 'css/img/placeholder.png' %}{% endif %}">
+            <div class="card-body">
+                <h5 class="card-title">{{ satellite.name }}</h5>
+                
+                <p class="card-text">Health: {{ satellite.health }}</p>
+                <p class="card-text">Speed: {{ satellite.speed }}</p>
+
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <a class="btn btn-sm btn-indeform-danger" href="{% url 'satellite:delete' satellite.id %}" role="button">Delete</a>
+                        <a class="btn btn-sm btn-indeform" href="{% url 'satellite:update' satellite.id %}" role="button">Update</a>
+                    </div>
+                    <small>Last time edited: {{ product.edited_at|naturaltime }}</small>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

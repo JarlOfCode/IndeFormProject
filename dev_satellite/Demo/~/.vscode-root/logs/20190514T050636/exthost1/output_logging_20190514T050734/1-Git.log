@@ -1,0 +1,150 @@
+Looking for git in: git
+Using git 2.11.0 from git
+> git rev-parse --show-toplevel
+> git config --get commit.template
+Open repository: /home/IndeFormProject
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git show :dev_satellite/Demo/satellite/views.py
+> git show :dev_satellite/Demo/satellite/models.py
+> git check-ignore -z --stdin
+> git show :dev_satellite/Demo/satellite/templates/satellite/satellite_list.html
+> git show :dev_satellite/Demo/satellite/templates/satellite/satellite_detail.html
+> git show :dev_satellite/Demo/satellite/templates/satellite/satellite_create.html
+> git show :dev_satellite/Demo/satellite/templates/satellite/satellite_detail.html
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git show :dev_satellite/Demo/products/templates/products/product_confirm_delete.html
+> git show :dev_satellite/Demo/products/templates/products/product_form.html
+> git show :dev_satellite/Demo/products/templates/products/product_detail.html
+> git show :dev_satellite/Demo/products/urls.py
+> git show :dev_satellite/Demo/products/views.py
+> git show :dev_satellite/Demo/satellite/views.py
+> git show :dev_satellite/Demo/products/views.py
+> git show :dev_satellite/Demo/satellite/views.py
+> git show :dev_satellite/Demo/satellite/templates/satellite/satellite_list.html
+> git show :dev_satellite/Demo/satellite/templates/satellite/satellite_detail.html
+> git show :dev_satellite/Demo/satellite/views.py
+> git show :dev_satellite/Demo/satellite/urls.py
+> git show :dev_satellite/Demo/satellite/views.py
+> git show :dev_satellite/Demo/products/views.py
+> git show :dev_satellite/Demo/satellite/views.py
+> git show :dev_satellite/Demo/satellite/templates/satellite/satellite_detail.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :dev_satellite/Demo/satellite/templates/satellite/satellite_list.html
+> git show :dev_satellite/Demo/satellite/templates/satellite/satellite_create.html
+> git show :dev_satellite/Demo/satellite/templates/satellite/satellite_confirm_delete.html
+> git show :dev_satellite/Demo/satellite/templates/satellite/satellite_create.html
+> git show :dev_satellite/Demo/satellite/views.py
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :dev_satellite/Demo/satellite/views.py
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :dev_satellite/Demo/satellite/templates/satellite/satellite_confirm_delete.html
+> git show :dev_satellite/Demo/satellite/templates/satellite/satellite_list.html
+> git show :dev_satellite/Demo/satellite/templates/satellite/satellite_detail.html
+> git show :dev_satellite/Demo/satellite/urls.py
+> git show :dev_satellite/Demo/satellite/views.py
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :dev_satellite/Demo/satellite/__init__.py
+> git check-ignore -z --stdin
+> git show :dev_satellite/Demo/manage.py
+> git check-ignore -z --stdin
+> git show :dev_satellite/Demo/idfdemo/settings.py
+> git show :dev_satellite/Demo/satellite/templates/satellite/satellite_create.html
+> git show :dev_satellite/Demo/satellite/templates/satellite/create_or_choose_menu.html
+> git show :dev_satellite/Demo/satellite/templates/satellite/satellite_detail.html
+> git show :dev_satellite/Demo/satellite/templates/satellite/satellite_create.html
+> git show :dev_satellite/Demo/satellite/templates/satellite/satellite_list.html
+> git show :dev_satellite/Demo/satellite/templates/satellite/create_or_choose_menu.html
+> git show :dev_satellite/Demo/satellite/templates/satellite/satellite_confirm_delete.html
+> git show :dev_satellite/Demo/satellite/templates/satellite/satellite_create.html
+> git show :dev_satellite/Demo/satellite/templates/satellite/satellite_detail.html
+> git show :dev_satellite/Demo/satellite/templates/satellite/satellite_list.html
+> git show :dev_satellite/Demo/satellite/templates/satellite/create_or_choose_menu.html
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git show :dev_satellite/Demo/static/css/marea.css
+> git show :dev_satellite/Demo/static/css/general.css
+> git show :dev_satellite/Demo/static/css/marea.css
+> git show :dev_satellite/Demo/static/css/products.css
+> git show :dev_satellite/Demo/static/css/marea.css
+> git show :dev_satellite/Demo/static/css/general.css
+> git show :dev_satellite/Demo/static/css/marea.css
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :dev_satellite/Demo/satellite/templates/satellite/create_or_choose_menu.html
+> git show :dev_satellite/Demo/static/css/general.css
+> git show :dev_satellite/Demo/static/css/theme.css
+> git show :dev_satellite/Demo/manage.py
+> git show :dev_satellite/Demo/static/css/general.css
+> git check-ignore -z --stdin
+> git show :dev_satellite/Demo/templates/shared/footer.html
+> git show :dev_satellite/Demo/templates/shared/header.html
+> git show :dev_satellite/Demo/satellite/templates/satellite/satellite_detail.html
+> git show :dev_satellite/Demo/satellite/templates/satellite/satellite_list.html
+> git show :dev_satellite/Demo/satellite/templates/satellite/satellite_create.html
+> git show :dev_satellite/Demo/satellite/templates/satellite/satellite_confirm_delete.html
+> git show :dev_satellite/Demo/satellite/templates/satellite/create_or_choose_menu.html
+> git show :dev_satellite/Demo/products/templates/products/product_confirm_delete.html
+> git show :dev_satellite/Demo/products/templates/products/product_detail.html
+> git show :dev_satellite/Demo/products/templates/products/product_form.html
+> git show :dev_satellite/Demo/products/templates/products/product_list.html
+> git show :dev_satellite/Demo/satellite/templates/satellite/create_or_choose_menu.html
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git show :dev_satellite/Demo/marea/templates/marea/home.html
+> git show :dev_satellite/Demo/satellite/templates/satellite/create_or_choose_menu.html
+> git show :dev_satellite/Demo/satellite/templates/satellite/satellite_detail.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
