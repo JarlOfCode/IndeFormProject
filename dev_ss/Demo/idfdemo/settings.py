@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'marea.apps.MareaConfig',
     'parea.apps.PareaConfig',
     'products.apps.ProductsConfig',
+    'solar.apps.SolarConfig',
 ]
 
 MIDDLEWARE = [

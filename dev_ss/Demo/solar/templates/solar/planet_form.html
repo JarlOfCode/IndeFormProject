@@ -1,0 +1,109 @@
+{% extends 'marea/layout.html' %}
+
+
+{% block content %}
+    {% if form.instance.id %}
+        <h1>Update product</h1>
+    {% else %}
+        <h1 class="mb-5">Create new product</h1>
+    {% endif %}
+
+    <form class="form" action="
+            {% if form.instance.id %}
+                {% url 'products:update' form.instance.id %}
+            {% else %}
+                {% url 'products:create' %}
+            {% endif %}"
+            method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        
+        <div class="form-group">
+            <input class="form-control shadow-lg" type="{{ form.title.field.widget.input_type }}" name="{{ form.title.name }}" placeholder="Title" value="{% if form.title.value %}{{ form.title.value }}{% endif %}">
+        
+            {% if form.title.errors %}
+                <div class="msg error">
+                    {% for error in form.title.errors %}
+                        {{ error|escape }}
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+        <div class="form-group">
+            <input class="form-control shadow-lg" type="{{ form.planetRadius.field.widget.input_type }}" name="{{ form.planetRadius.name }}" placeholder="1" value="{% if form.planetRadius.value %}{{ form.planetRadius.value }}{% endif %}">
+        
+            {% if form.planetRadius.errors %}
+                <div class="msg error">
+                    {% for error in form.planetRadius.errors %}
+                        {{ error|escape }}
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+        <div class="form-group">
+            <input class="form-control shadow-lg" name="{{ form.speed.name }}" placeholder="speed" rows="3">{% if form.speed.value %}{{ form.speed.value }}{% endif %}
+        
+            {% if form.speed.errors %}
+                <div class="msg error">
+                    {% for error in form.speed.errors %}
+                        {{ error|escape }}
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+       
+
+        <div class="form-group">
+            <input class="form-control shadow-lg" type="{{ form.color.field.widget.input_type }}" name="{{ form.color.name }}" placeholder="color" value="{% if form.color.value %}{{ form.color.value }}{% endif %}">
+        
+            {% if form.color.errors %}
+                <div class="msg error">
+                    {% for error in form.color.errors %}
+                        {{ error|escape }}
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+        <div class="form-group">
+            <input class="form-control shadow-lg" type="{{ form.vector.field.widget.input_type }}" name="{{ form.vector.name }}" placeholder="1" value="{% if form.vector.value %}{{ form.vector.value }}{% endif %}">
+        
+            {% if form.vector.errors %}
+                <div class="msg error">
+                    {% for error in form.vector.errors %}
+                        {{ error|escape }}
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+        <div class="form-group">
+            <input class="form-control shadow-lg" name="{{ form.orbitRadius.name }}" placeholder="orbitRadius" rows="3">{% if form.orbitRadius.value %}{{ form.orbitRadius.value }}{% endif %}</textarea>
+        
+            {% if form.orbitRadius.errors %}
+                <div class="msg error">
+                    {% for error in form.orbitRadius.errors %}
+                        {{ error|escape }}
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+
+        <div class="form-group">
+            <input class="form-control shadow-lg" name="{{ form.solarSystem.name }}" placeholder="solarSystem" rows="3">{% if form.solarSystem.value %}{{ form.solarSystem.value }}{% endif %}</textarea>
+        
+            {% if form.solarSystem.errors %}
+                <div class="msg error">
+                    {% for error in form.solarSystem.errors %}
+                        {{ error|escape }}
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+
+        <button class="btn btn-indeform btn-block shadow-lg mt-5" type="submit">
+            {% if form.instance.id %}
+                Update
+            {% else %}
+                Create
+            {% endif %}
+        </button>
+    </form>
+{% endblock content %}

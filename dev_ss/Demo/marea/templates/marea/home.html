@@ -1,8 +1,17 @@
 {% extends 'marea/layout.html' %}
 
+{% load static %}
 
 {% block content %}
-    <h1>Welcome to Indeform Django Demo Home Page</h1>
 
-    <p class="lead">This example was created using Bootstrap 4 framework.<br> It implements simple product model with main CRUD functions.</p>
+<a href="{% url 'solar:create' %}" >
+        <p id="select-btn" class="select-btn">Create a new solar system</p>
+</a>     
+<a href="{% url 'solar:list' %}" >
+    <p id="select-btn" class="select-btn">View solar systems</p>
+</a> 
+<a href="{% url 'solar:planet-create' %}" >
+    <p id="select-btn" class="select-btn">Create a new planet</p>
+</a> 
+
 {% endblock content %}

@@ -31,6 +31,7 @@ urlpatterns = [
     # My apps urls (routes)
     path('', include('parea.urls', namespace='parea')),
     path('', include('marea.urls', namespace='marea')),
+    path('solar/', include('solar.urls', namespace='solar')),
     path('products/', include('products.urls', namespace='products')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
