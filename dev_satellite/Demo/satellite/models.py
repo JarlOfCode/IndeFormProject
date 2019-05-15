@@ -12,6 +12,9 @@ class Satellite(models.Model):
     fuel_storage_size = models.IntegerField(null=False)
     #image = models.ImageField(upload_to='user/images', blank=True, null=True)
     #id = models.IntegerField(max_digits=12, null=False )
+    x_position = models.DecimalField(max_digits=10, decimal_places=2, null=True)
+    y_position = models.DecimalField(max_digits=10, decimal_places=2, null=True)
+    z_position = models.DecimalField(max_digits=10, decimal_places=2, null=True)
 
 class Weapon(models.Model):
     name = models.CharField(max_length=30, blank=False, null=False)

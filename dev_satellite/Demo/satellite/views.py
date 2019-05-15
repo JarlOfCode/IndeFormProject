@@ -44,7 +44,7 @@ class SatelliteUpdateView(LoginRequiredMixin, UpdateView):
     def get_success_url(self):
         if not self.success_url:
             raise ImproperlyConfigured('No URL to redirect to. Provide a success_url.')
-        return reverse(self.success_url, kwargs={'pk': self.Satellite.id})    
+        return reverse(self.success_url, kwargs={'pk': self.object.id})    
     
 
 
