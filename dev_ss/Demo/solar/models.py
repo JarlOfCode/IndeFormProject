@@ -39,6 +39,7 @@ class Planet(models.Model):
     solarSystem = models.ForeignKey(SolarSystem, on_delete=models.CASCADE, null=True)
    
 # Atsiradimo tasku klase
+"""
 class SpawnPoint(models.Model):
     title = models.CharField(max_length=30, blank=False, null=False)
     
@@ -67,3 +68,4 @@ class Meteor(models.Model):
 
     axisRotationSpeed = models.DecimalField(max_digits=7, decimal_places=5, null=False)
     axisRotationDirection = models.IntegerField(choices=METEOR_ROTATION_DIRECTIONS, default=CLOCKWISE,null=False)
+    """

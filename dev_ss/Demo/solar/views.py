@@ -8,11 +8,11 @@ from django.views.generic import DeleteView
 from django.views.generic import DetailView
 from django.views.generic import ListView
 from django.views.generic import UpdateView
+from django.views.generic import TemplateView
 
 from .models import SolarSystem
 from .models import Planet
 
-from .forms import MyModelForm
 
 # Create your views here.
 
@@ -31,6 +31,8 @@ class SolarSystemListView(LoginRequiredMixin, ListView):
 
 class PlanetCreateView(LoginRequiredMixin, CreateView):
     model = Planet
-    form_class = MyModelForm
     fields = ['title','planetRadius', 'speed','color','vector', 'orbitRadius', 'solarSystem']
     template_name = "solar/planet_form.html"
+
+class SystemControlView(TemplateView):
+    template_name = "solar/threejs-demo.html"
