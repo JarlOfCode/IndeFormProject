@@ -1,0 +1,49 @@
+
+{% load static %}
+
+{% block content %}
+<html>
+    <head><title>THREE.js Demo - INDEFORM</title></head>
+	
+	<!--<script src="pub/js/scene_controller.js"></script>
+-->
+    <body>
+	<form>
+	Select your solar system:
+	<select id="mySelect">
+	<option value="1"></option>
+	</select>
+	<input type="button" value="Refresh Page" onClick="location.href=location.href">
+	</form>
+
+	<table>
+	<tr>
+		<tr>	
+			<!--<th>Radius</th>
+			<th>Speed</th>
+			<th>Rotation</th>
+			-->
+		</tr>
+		<tr>
+		<!--
+			<th><input id="planetRadius" type="range" min="0" max="30" step="0.5"/></th>
+			<th><input id="planetSpeed" type="range" min="0" max="0.006" step="0.00012"/></th>
+			<th><input id="clockwise" type="radio" value="Clockwise">Clockwise</th>
+			<th><input id="antiClockwise" type="radio" value="Anticlockwise">Anticlockwise</th>
+			-->
+		</tr>
+	</table>
+
+	
+	</body>
+	
+	
+    <script src="{% static 'js/lib/three.min.js' %}"></script>
+	<script src="{% static 'js/lib/orbit_controls.js' %}"></script>
+	<script src="{% static 'js/config.js' %}"></script>
+	<script src="{% static 'js/core.js' %}"></script>
+	<script src="{% static 'js/scene_controller.js' %}"></script>
+</html>
+
+	
+{% endblock %}
