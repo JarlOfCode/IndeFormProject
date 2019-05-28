@@ -19,6 +19,7 @@ from .models import Planet
 class SolarSystemCreateView(LoginRequiredMixin, CreateView):
     model = SolarSystem
     fields = ['name','planetNumber', 'description']
+    #template_name = ""
     template_name = "solar/solar-system_form.html"
     success_url = reverse_lazy('solar:list')
     #success_url = reverse_lazy('')
