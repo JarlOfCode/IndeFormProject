@@ -12,6 +12,8 @@ class SolarSystem(models.Model):
     planetNumber = models.IntegerField(null=False)
     description = models.TextField(blank=True, null=True)
 
+    def __str__(self):
+        return self.name
 
 class Planet(models.Model):
     #PLANETU SPALVU PASIRINKIMAI
@@ -38,6 +40,8 @@ class Planet(models.Model):
     orbitRadius = models.IntegerField(null=False)
     solarSystem = models.ForeignKey(SolarSystem, on_delete=models.CASCADE, null=True)
    
+    def __str__(self):
+       return self.name
 # Atsiradimo tasku klase
 """
 class SpawnPoint(models.Model):

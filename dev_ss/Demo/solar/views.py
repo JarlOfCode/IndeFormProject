@@ -19,7 +19,6 @@ from .models import Planet
 class SolarSystemCreateView(LoginRequiredMixin, CreateView):
     model = SolarSystem
     fields = ['name','planetNumber', 'description']
-    #template_name = ""
     template_name = "solar/solar-system_form.html"
     success_url = reverse_lazy('solar:list')
     #success_url = reverse_lazy('')
@@ -28,18 +27,25 @@ class SolarSystemListView(LoginRequiredMixin, ListView):
     model = SolarSystem
     paginate_by = 5
     template_name = "solar/solar_list.html"
-    #success_url = reverse_lazy('solar:list')
+    success_url = reverse_lazy('')
+    context_object_name = 'solar-system'
 
 class PlanetListView(LoginRequiredMixin, ListView):
     model = Planet
-    paginate_by = 5
-    template_name = "solar/planet_list.html"
-
+    paginate_by = 10
+    template_name = "solar/planet-list.html"
 
 class PlanetCreateView(LoginRequiredMixin, CreateView):
     model = Planet
     fields = ['title','planetRadius', 'speed','color','vector', 'orbitRadius', 'solarSystem']
     template_name = "solar/planet_form.html"
+    #s = SolarSystem.objects.get().all()
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['solarsystems'] = SolarSystem.objects.all()
+        return context
+
 
 class SystemControlView(TemplateView):
     template_name = "solar/threejs-demo.html"

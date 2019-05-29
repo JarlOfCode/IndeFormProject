@@ -14,5 +14,5 @@ urlpatterns = [
     path('list/', SolarSystemListView.as_view(), name='list'),
     path('planet-create/', PlanetCreateView.as_view(), name='planet-create'),
     path('control/', SystemControlView.as_view(), name='control'),
-    path('planet_list/', PlanetListView.as_view(), name='planet_list')
+    path('planet-list/<int:pk>/', PlanetListView.as_view(), name='planet-list'),
 ]

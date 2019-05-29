@@ -18,7 +18,7 @@
                     <tr>
                         <th scope="row">{{ forloop.counter }}</th>
                         <td>    
-                            <a href="{% url 'solar:planet_list' %}">
+                            <a href="{% url 'solar:planet-list' solar.id %}">
                                 {{ solar.name }}
                             </a>
                         </td>
