@@ -1374,5 +1374,19 @@
     },
     "theme": "vs-dark",
     "themeBackground": "#1e1e1e",
-    "pickerWorkingDir": "/home/IndeFormProject/dev_ss"
+    "pickerWorkingDir": "/home/IndeFormProject/dev_ss",
+    "windowsState": {
+        "lastActiveWindow": {
+            "folder": "file:///home/IndeFormProject/dev_ss/Demo",
+            "backupPath": "/home/IndeFormProject/dev_ss/Demo/~/.vscode-root/Backups/f7ae86336906fba7d7c29e4f612a2542",
+            "uiState": {
+                "mode": 1,
+                "x": 80,
+                "y": 89,
+                "width": 1730,
+                "height": 861
+            }
+        },
+        "openedWindows": []
+    }
 }

@@ -3,6 +3,7 @@ from .views import SolarSystemCreateView
 from .views import SolarSystemListView
 from .views import PlanetCreateView
 from .views import SystemControlView
+from .views import PlanetListView
 
 
 app_name = 'solar'
@@ -13,4 +14,5 @@ urlpatterns = [
     path('list/', SolarSystemListView.as_view(), name='list'),
     path('planet-create/', PlanetCreateView.as_view(), name='planet-create'),
     path('control/', SystemControlView.as_view(), name='control'),
+    path('planet_list/', PlanetListView.as_view(), name='planet_list')
 ]

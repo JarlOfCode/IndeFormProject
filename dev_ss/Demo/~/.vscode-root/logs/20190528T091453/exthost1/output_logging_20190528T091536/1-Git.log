@@ -114,3 +114,23 @@ Open repository: /home/IndeFormProject
 > git show :dev_ss/Demo/solar/templates/solar/solar_list.html
 > git show :dev_ss/Demo/solar/views.py
 > git show :dev_ss/Demo/solar/urls.py
+> git show :dev_ss/Demo/solar/models.py
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git show :dev_ss/Demo/static/js/core.js
+> git show :dev_ss/Demo/static/js/config.js
+> git show :dev_ss/Demo/static/js/scene_controller.js
+> git show :dev_ss/Demo/static/js/core.js
+> git show :dev_ss/Demo/static/js/scene_controller.js
+> git show :dev_ss/Demo/static/js/core.js
+> git show :dev_ss/Demo/static/js/config.js
+> git show :dev_ss/Demo/static/js/scene_controller.js
+> git show :dev_ss/Demo/static/js/core.js
+> git show :dev_ss/Demo/static/js/config.js
+> git check-ignore -z --stdin
+> git show :dev_ss/Demo/static/js/scene_controller.js
+> git check-ignore -z --stdin
+> git show :dev_ss/Demo/static/js/config.js
+> git show :dev_ss/Demo/static/js/core.js
+> git show :dev_ss/Demo/static/js/config.js
+> git show :dev_ss/Demo/static/js/scene_controller.js

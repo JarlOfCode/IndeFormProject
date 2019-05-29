@@ -28,6 +28,12 @@ class SolarSystemListView(LoginRequiredMixin, ListView):
     model = SolarSystem
     paginate_by = 5
     template_name = "solar/solar_list.html"
+    #success_url = reverse_lazy('solar:list')
+
+class PlanetListView(LoginRequiredMixin, ListView):
+    model = Planet
+    paginate_by = 5
+    template_name = "solar/planet_list.html"
 
 
 class PlanetCreateView(LoginRequiredMixin, CreateView):

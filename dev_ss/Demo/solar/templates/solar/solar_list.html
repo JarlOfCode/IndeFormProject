@@ -13,13 +13,13 @@
             </tr>
         </thead>
         <tbody>
-            {% if solar_list %}
-                {% for solar in solar_list %}
+            {% if solarsystem_list %}
+                {% for solar in solarsystem_list %}
                     <tr>
                         <th scope="row">{{ forloop.counter }}</th>
                         <td>    
-                            <a href="{% url 'solar:detail' solar.id %}">
-                                {{ solarSystem.name }}
+                            <a href="{% url 'solar:planet_list' %}">
+                                {{ solar.name }}
                             </a>
                         </td>
                         
